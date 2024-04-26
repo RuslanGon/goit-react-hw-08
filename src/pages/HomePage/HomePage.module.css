@@ -20,7 +20,7 @@
 }
 
 .image{
-    background-image: url(../../img//istockphoto-1398807156-612x612-min.jpg);
+    /* background-image: url(../../img/istockphoto-1398807156-612x612-min.jpg); */
         background-position:100%;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -30,7 +30,7 @@
 }
 
 .wrapper:before {
-    background-color: #d4bee2;
+    /* background-color: #d4bee2; */
     content: "";
     height: calc(100% + 3px);
     position: absolute;

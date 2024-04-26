@@ -16,7 +16,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
   color: #0b0c0b;
-  background-color: rgb(225, 222, 227);
+  background-image: url(./img/1646821501_19-kartinkin-net-p-devushka-s-telefonom-v-rukakh-kartinki-27.jpg);
+  background-position:100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+ 
 }
 
 h1,h2,p {
