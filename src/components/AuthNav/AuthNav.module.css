@@ -29,7 +29,7 @@
 }
 
 .navLink:before {
-    background-color: #d4bee2;
+    /* background-color: #d4bee2; */
     content: "";
     height: calc(100% + 3px);
     position: absolute;
@@ -41,7 +41,7 @@
     border-radius: 20px;
 }
 
-.navLink:hover:before {
+/* .navLink:hover:before {
     background-color: rgb(184, 132, 222);
 }
 
@@ -49,4 +49,4 @@
 .active:before {
     background-color: rgba(114, 57, 155, 0.712);
 
-}
+} */
