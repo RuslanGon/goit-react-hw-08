@@ -61,7 +61,7 @@
     border-radius: 20px;
 }
 
-.logOut_button:hover:before {
+/* .logOut_button:hover:before {
     background-color: rgb(184, 132, 222);
 }
 
@@ -69,4 +69,4 @@
 .active:before {
     background-color: rgba(114, 57, 155, 0.712);
 
-}
+} */
