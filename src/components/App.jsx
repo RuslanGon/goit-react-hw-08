@@ -1,5 +1,5 @@
 import './App.css'
-import { useDispatch} from 'react-redux';
+import { useDispatch, useSelector} from 'react-redux';
 import { useEffect } from 'react';
 import { lazy } from 'react';
 import Layout from './Layout/Layout';
@@ -8,6 +8,8 @@ import { refreshUser } from '../redux/auth/operations';
 import NoFoundPage from '../pages/NoFoundPage/NoFoundPage';
 import RestrictedRoute from './RestrictedRoute/RestrictedRoute';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import { selectIsRefreshing } from '../redux/auth/selectors';
+import Loader from './Loader/Loader';
 
 
 
@@ -20,14 +22,16 @@ const ContactsPage = lazy(() => import('../pages/ContactsPage/ContactsPage'));
 
 function App() { 
   const dispatch = useDispatch();
+  const isRefreshing = useSelector(selectIsRefreshing);
 
 
   useEffect(() => {
     dispatch(refreshUser());    
   }, [dispatch]);
 
-  return  (<>
+  return isRefreshing ? (<Loader />) :  (<> 
       <Layout>
+
       <Routes>
         <Route path="/" element={<HomePage />} />
           <Route path="/register" element={
@@ -47,3 +51,4 @@ function App() {
 }
 
 export default App
+
