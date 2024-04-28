@@ -33,9 +33,9 @@ const slice = createSlice({
       
       .addCase(register.rejected, handleRejected)
       .addCase(login.rejected, handleRejected)
-      .addCase(refreshUser.rejected, (state, action) => {
-        state.status = 'failed';
-        state.error = action.payload;})
+      .addCase(refreshUser.rejected, (state) => {
+        state.isRefreshing = false;
+        state.isLoading = false;})
         
       .addCase(register.fulfilled, (state, action) => {
         state.user = action.payload.user;
