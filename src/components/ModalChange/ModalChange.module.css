@@ -107,7 +107,7 @@
 
 .add_button:after {
     content: "";
-    background-color: #54287e;
+    /* background-color: #54287e; */
     width: 100%;
     z-index: -1;
     position: absolute;
