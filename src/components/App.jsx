@@ -12,9 +12,6 @@ import { selectIsRefreshing } from '../redux/auth/selectors';
 import Loader from './Loader/Loader';
 
 
-
-
-
 const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
 const RegisterPage = lazy(() => import('../pages/RegisterPage/RegisterPage'));
 const LoginPage = lazy(() => import('../pages/LoginPage/LoginPage'));
