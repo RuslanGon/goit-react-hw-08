@@ -29,9 +29,8 @@ function App() {
     dispatch(refreshUser());    
   }, [dispatch]);
 
-  return isRefreshing ? (<Loader />) :  (<> 
+  return isRefreshing ? (<Loader />) : (<> 
       <Layout>
-
       <Routes>
         <Route path="/" element={<HomePage />} />
           <Route path="/register" element={
